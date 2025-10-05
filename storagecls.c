@@ -2,7 +2,8 @@
 
 void display()
 {
-    int x=100;
+    register int x=100;
+    //int x=100;
     printf("\n Display %d ",x);
 }
 int main()
@@ -10,6 +11,6 @@ int main()
     int a=25,b;
     display();
     printf("\n main %d",a);
-    printf("\n %d",b);
+    printf("\n garbage %d",b);
     return 0;
 }
